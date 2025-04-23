@@ -1,5 +1,6 @@
 :root {
   --bg-blue: #1074cc;
+  --bg-red: #cc1910;
 }
 * {
   box-sizing: border-box;
@@ -7,5 +8,11 @@
   margin: 0;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

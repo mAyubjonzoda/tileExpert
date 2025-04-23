@@ -6,11 +6,29 @@
     <div class="right-part">
       <div class="right-part__menu-actions">
         <div class="menu">
-          <div class="menu__item"></div>
+          @for (item of items; track $index) {
+          <div class="menu__item">
+            <a [routerLink]="item.route" class="menu__link"
+              ><mat-icon>{{ item.icon }}</mat-icon>
+              <span>{{ item.name }}</span></a
+            >
+          </div>
+          }
         </div>
-        <div class="actions"></div>
+        <div class="actions">
+          <div class="search"><mat-icon>search</mat-icon></div>
+          <div class="add"><mat-icon>add_circle</mat-icon></div>
+        </div>
       </div>
-      <div class="menu"></div>
+      <div class="menu__block">
+        <div class="notifications">
+          <div class="text">32</div>
+          <mat-icon>notifications</mat-icon>
+        </div>
+        <div class="ava">
+          <img src="ava.png" alt="" />
+        </div>
+      </div>
     </div>
   </div>
 </div>
