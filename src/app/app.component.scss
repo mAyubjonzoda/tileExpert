@@ -77,8 +77,8 @@
       background-color: var(--bg-red);
       position: absolute;
       top: 0;
-      left: 19px;
-      font-size: 12px;
+      left: 12px;
+      font-size: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -93,5 +93,19 @@
       height: 32px;
       border-radius: 50%;
     }
+  }
+}
+@media (max-width: 1140px) {
+  .ava,
+  .menu__item:not(:last-of-type) {
+    display: none;
+  }
+  .menu__link {
+    span {
+      display: none;
+    }
+  }
+  .menu {
+    padding: 0;
   }
 }
